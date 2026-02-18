@@ -3,6 +3,8 @@ RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 ADD https://github.com/Venkat-Tholeti/Terraform-ModuleCommonCode-Roboshop/blob/main/data.tf /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
+ADD sample.tar /tmp 
+#it will automatically untar the file and place it in /tmp
 CMD [ "nginx", "-g", "daemon off;" ]
 
 # ADD COMMAND IS SAME AS COPY COMMAND BUT HAS TWO ADVANTAGES
