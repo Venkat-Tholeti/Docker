@@ -1,6 +1,7 @@
 ARG version
 FROM almalinux:${version:-9}
 # IF SUPPLIED IT WILL TAKE SUPPLIED VERSION , IF NOT IT WILL TAKE 9 AS VERSION
+#docker build -t arg:v1 --no-cache --progress=plain --build-arg version=8 .
 ENV course="devops" \
     duration="120HRS"
 ARG trainer="sivakumar"
