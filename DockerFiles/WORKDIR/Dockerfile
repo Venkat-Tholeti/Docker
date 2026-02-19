@@ -8,3 +8,5 @@ CMD [ "sleep", "1000" ]
 
 #HERE CMD TO KEEP CONTAINER RUNNING AS WE NEED TO LOGIN AND CHECK
 
+# RUN BELOW COMMAND
+# docker build -t workdir:v1 --no-cache --progress=plain
