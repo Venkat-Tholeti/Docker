@@ -15,6 +15,8 @@ CMD [ "sleep", "500" ]
 
 #BUT there is an exception by suppling arg version as 1st instruction
 
+# INTERVIEW QUESTION
+# HOW CAN U USE ARG INSIDE CONTAINER
 #IF WE WANT TO USE ARG INSIDE CONTAINER AND SHOW VALUES IN CONTAINER THEN WE NEED TO USE ENVIRONMENT AND PASS THAT ARGUMENT AS BELOW
 # ARG version
 # FROM almalinux:${version:-9}
