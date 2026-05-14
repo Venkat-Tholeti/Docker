@@ -1,8 +1,0 @@
-FROM almalinux:9
-RUN dnf install nginx -y
-RUN useradd venkat
-USER venkat
-CMD [ "google.com" ]
-ENTRYPOINT [ "ping" ]
-
-#HERE WHEN WE LOGIN INTO CONTAINER ITS DEFAULT USER IS ROOT, SO THATS NOT SECURE SO WE USE OUR ID TO LOGIN FOR THAT "USER" IS USEFUL

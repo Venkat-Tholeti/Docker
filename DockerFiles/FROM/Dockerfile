@@ -1,2 +1,0 @@
-FROM almalinux:9
-
